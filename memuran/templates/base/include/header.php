@@ -26,13 +26,15 @@
 <section class="section-header">
     <div class="container">
         <div class="header">
-            <a href="/" class="header-logo">
+            <a href="/" class="header-logo<?=$sPathUrl === "/" ? " active" : ""?>">
                 <img src="<?=PATH_CURRENT_TEMPLATE . "assets/images/favicon/android-chrome-192x192.png"?>" alt="Лого">
                 <span class="text--xl">Книга жизни</span>
             </a>
             <div class="header-menu">
                 <a href="/" class="text--md<?=$sPathUrl === "/" ? ' active"' : ""?>">Главная</a>
-                <a href="/events/" class="text--md<?=$sPathUrl === "/events/" ? ' active"' : ""?>">События</a>
+                <?php /*
+                    <a href="/events/" class="text--md<?=$sPathUrl === "/events/" ? ' active"' : ""?>">События</a>
+                */ ?>
                 <a href="/calendar/" class="text--md<?=$sPathUrl === "/calendar/" ? ' active"' : ""?>">Календарь</a>
             </div>
         </div>
