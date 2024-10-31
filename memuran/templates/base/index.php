@@ -143,7 +143,7 @@
 </div>
 
 
-<section class="section-article">
+<section class="section-comment" style="display: none">
     <div class="container">
         <section>
             <h2>Комментарии</h2>
