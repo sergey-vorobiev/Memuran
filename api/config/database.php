@@ -1,22 +1,21 @@
 <?php
 
 class Database {
-    // укажите свои учетные данные базы данных 
+
+    private $conn;
+
     private $host;
     private $db_name;
     private $username;
     private $password;
-    public $conn;
 
-    // Конструктор, который принимает параметры для подключения к БД
-    public function __construct($host, $db_name, $username, $password) {
-        $this->host = $host;
-        $this->db_name = $db_name;
-        $this->username = $username;
-        $this->password = $password;
+    public function __construct() {
+        $this->host = "localhost";
+        $this->db_name = "a1032910_memuran";
+        $this->username = "root";
+        $this->password = "";
     }
 
-    // получаем соединение с БД 
     public function getConnection(){
 
         $this->conn = null;
@@ -29,7 +28,7 @@ class Database {
         }
 
         return $this->conn;
-    } 
+    }
 }
 
 
